@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>导航网站——信息检索</title>
+    </head>
+    <body>
+        <h1>导航网站——信息检索</h1>
+        <br>
+        
+        <div style="height: auto;">
+            <a href="https://github.com/marco-zym/navigation-website">
+                <img src="https://img.shields.io/github/stars/marco-zym/navigation-website?style=social" alt="GitHub stars">
+            </a>
+        </div>
+
+        <div>
+            <input type="text" id="keyword" onkeydown="keydownsearch()">
+            &ensp;
+            <button onclick="search()" class="button">搜索</button>
+        </div>
+
+        <!--
+        <div>
+            <button onclick="set('baidu')" id="baiduButton">百度</button>
+            <button onclick="set('sogou')" id="sogouButton">搜狗</button>
+            <button onclick="set('so')" id="so">360搜索</button>
+            <button onclick="set('chinaso')" id="chinasoButton">中国搜索</button>
+            <button onclick="set('toutiao')" id="toutiaoButton">头条</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="set('google')" id="googleButton">谷歌</button>
+            <button onclick="set('bing')" id="bingButton">必应</button>
+            <button onclick="set('yandex')" id="yandexButton">Yandex</button>
+            <button onclick="set('duckduckgo')" id="duckduckgoButton">DuckDuckGo</button>
+            <button onclick="set('ask')" id="askButton">Ask</button>
+        </div>
+        -->
+
+        <div>
+            <label for="searchEngine">
+                <h2>选择搜索引擎：</h2>
+            </label>
+            <select id="searchEngine">
+                <option value="baidu">百度</option>
+                <option value="sogou">搜狗</option>
+                <option value="so">360搜索</option>
+                <option value="chinaso">中国搜索</option>
+                <option value="toutiao">头条</option>
+
+                <option value="google">Google</option>
+                <option value="bing">Bing</option>
+                <option value="yandex">Yandex</option>
+                <option value="duckduckgo">DuckDuckGo</option>
+                <option value="ask">Ask</option>
+            </select>
+            
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
