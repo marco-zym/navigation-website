@@ -48,3 +48,9 @@ function search(keyword) {
         window.open("https://www.ask.com/web?q=" + keyword, "_blank")
     };
 }
+
+function keydownSearch() {
+    if (event.keyCode === 13) {
+        search()
+    }
+}
